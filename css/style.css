@@ -109,7 +109,7 @@ h6 {
 
 /*imagen de fondo de la página principal*/
 #imagen-fondo {
-  background-image: url(../img/hero-bg.jpeg);
+  background: url(../img/hero-bg.jpeg) top center fixed;
   background-size: cover;
   height: 100vh;
 }
@@ -165,28 +165,31 @@ h6 {
 .fondo-gris {
   background-color: #f5f8fd;
 }
+.progress {
+  border-radius: 0;
+}
 
-.progress-html {
+#progress-html {
   width: 100%;
 }
 
-.progress-css {
+#progress-css {
   width: 90%;
 }
 
-.progress-javascript {
+#progress-javascript {
   width: 75%;
 }
 
-.progress-php {
+#progress-php {
   width: 80%;
 }
 
-.progress-wordpress {
+#progress-wordpress {
   width: 90%;
 }
 
-.progress-photoshop {
+#progress-photoshop {
   width: 55%;
 }
 
@@ -334,3 +337,38 @@ h6 {
   height: 300px;
 }
 /*Fin Contact*/
+
+
+section {
+  animation: aparicion 2s ease-in-out both;
+  animation-timeline: view();
+  animation-range: entry 30% cover 50%;
+}
+@keyframes progreso {
+  1% {
+    width: 1%;
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: green;
+  }
+}
+@keyframes aparicion {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+}
+#progress-html,
+#progress-css,
+#progress-javascript,
+#progress-php,
+#progress-wordpress,
+#progress-photoshop {
+  animation: progreso 5s ease-in-out both;
+}
