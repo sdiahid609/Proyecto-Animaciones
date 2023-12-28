@@ -32,6 +32,6 @@ Implementará un ejemplo de uso de la etiqueta <picture> para reproducir imágen
 )
 Creará una animación "keyframe" CSS3. KEYFRAME SCROLL DEPENDE DE EL ESTADO DE LA PAGINA
 -POR CADA SECCION VAYA INDICANDO EL TITULO 
--RELLENO DE BARRAS DE PROGRESO
+-RELLENO DE BARRAS DE PROGRESO -HECHO
 -Animación de aparición: Podrías hacer que los elementos de la sección "Services" aparezcan gradualmente en lugar de aparecer todos a la vez. Por ejemplo, podrías hacer que los elementos aparezcan uno por uno en un orden específico.
 -Animación de ondulación: Podrías hacer que los elementos de la sección "Services" se muevan como si estuvieran ondulando. Esto podría dar un efecto relajante y atractivo.
