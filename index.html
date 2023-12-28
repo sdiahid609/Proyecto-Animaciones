@@ -29,7 +29,7 @@
       <!--Inicio container fluid-->
       <div class="row">
         <!--Row Navbar y contenido-->
-        <div class="col-12 col-xl-2 p-0">
+        <div class="col-12 col-xl-2 p-0 ">
           <!--<nav class="navbar d-flex justify-content-end w-100">-->
           <div class="d-flex justify-content-end">
             <i class="d-xl-none"></i>
@@ -101,7 +101,7 @@
         </div>
         <!-- Fin de la navbar -->
         <!--Contenido-->
-        <div class="col-12 col-xl-10">
+        <div class="col-12 col-xl-10 ">
           <!-- Inicio Section Portada -->
           <div class="row" id="portada">
             <!--Portada-->
@@ -533,11 +533,10 @@
             <!--Fin row resume-->
           </section>
           <!-- Inicio Section Portfolio -->
-          <section class="row fondo-gris mt-5" id="portfolio">
+          <section class="row justify-content-center p-4 fondo-gris mt-5" id="portfolio">
             <!--Row Portfolio-->
-            <div class="col">
-              <!--col para evitar scroll lateral-->
-              <div class="row mx-4 mt-4">
+              <!--Inicio titulo portfolio-->
+              <div class="row  mt-4">
                 <!--Titulo Portfolio-->
                 <div class="col-1">
                   <h2>Portfolio</h2>
@@ -545,8 +544,9 @@
                 </div>
               </div>
               <!--Fin Titulo Portfolio-->
-              <div class="row mx-4 mt-4">
-                <!--Descripcion Portfolio-->
+              <!--Descripcion Portfolio-->
+              <div class="row  mt-4">
+                
                 <div class="col-12">
                   <p>
                     Magnam dolores commodi suscipit. Necessitatibus eius
@@ -558,7 +558,7 @@
                 </div>
               </div>
               <!--Fin Descripcion Portfolio-->
-              <div class="row mx-2 mt-4">
+              <div class="row  mt-4">
                 <!-- Navbar portfolio -->
                 <div class="col-12 text-center">
                   <!-- Usa col-12 para que ocupe todo el ancho -->
@@ -573,126 +573,234 @@
                 </div>
               </div>
               <!-- Fin Navbar portfolio -->
-              <div class="row text-center portfolio-imagenes mx-2 mt-4">
-                <div class="col-12 col-md-6 col-lg-3">
-                  <picture>
-                    <source
-                      media="(min-width:576px)"
-                      srcset="img/portfolio-1.jpeg"
-                      type="image/jpeg"
-                    />
-                    <source
-                      media="(min-width:776px)"
-                      srcset="img/portfolio-2.jpeg"
-                      type="image/jpeg"
-                    />
-                    <source
-                      media="(min-width:992px)"
-                      srcset="img/portfolio-3.jpeg"
-                      type="image/jpeg"
-                    />
-                    <source
-                      media="(min-width:1200px)"
-                      srcset="img/portfolio-4.jpeg"
-                      type="image/jpeg"
-                    />
-                    <source
-                      media="(min-width:1440px)"
-                      srcset="img/portfolio-5.jpeg"
-                      type="image/jpeg"
-                    />
-                  </picture>
+              <div class="row row-gap-5 text-center  mt-4">
+                <!--Primera fila galeria-->
+                <div class="row row-gap-5 ">
+                  <!--Primera imagen-->
+                  <div class="col-lg-4 col-xl-4 col-xxl-4  col-sm-12 d-md-block">
+                    <picture>
+                      <source
+                        media="(min-width: 1400px)"
+                        srcset="img/1400px/imagen1-xxlarge.jpg"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="img/1200px/imagen1-xlarge.jpg"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width: 992px)"
+                        srcset="img/992px/imagen1-large.png"
+                        type="image/png"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="img/768px/imagen1-medium.png"
+                        type="image/png"
+                      />
+                      <source
+                        media="(min-width:576px)"
+                        srcset="img/576px/imagen1-small.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/576px/imagen1-small.webp"
+                        alt="Montaña"
+                        class="rounded img-fluid"
+                      />
+                      <h3 class="mt-2">Aventura en la Montaña</h3>
+                    </picture>
+                  </div>
+                  <!--Segunda imagen-->
+                  <div class=" col-lg-4 col-xl-4 col-xxl-4   col-sm-12 d-md-block">
+                    <picture>
+                      <source
+                        media="(min-width: 1400px)"
+                        srcset="img/1400px/imagen2-xxlarge.jpg"
+                        type="image/jpeg"
+                        class="img-fluid rounded"
+                      />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="img/1200px/imagen2-xlarge.jpg"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width: 992px)"
+                        srcset="img/992px/imagen2-large.png"
+                        type="image/png"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="img/768px/imagen2-medium.png"
+                        type="image/png"
+                      />
+                      <source
+                        media="(min-width:576px)"
+                        srcset="img/576px/imagen2-small.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/576px/imagen2-small.webp"
+                        alt="Bosque"
+                        class="img-fluid rounded"
+                      />
+                      <h3 class="mt-2">Explorando el Bosque</h3>
+                    </picture>
+                  </div>
+                  <!--Tercera imagen-->
+                  <div class="col-lg-4 col-xl-4 col-xxl-4    col-sm-12 d-md-block">
+                    <picture>
+                      <source
+                        media="(min-width: 1400px)"
+                        srcset="img/1400px/imagen3-xxlarge.jpg"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="img/1200px/imagen3-xlarge.jpg"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width: 992px)"
+                        srcset="img/992px/imagen3-large.png"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="img/768px/imagen3-medium.png"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width:576px)"
+                        srcset="img/576px/imagen3-small.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/576px/imagen3-small.webp"
+                        alt="Océano"
+                        class="img-fluid rounded"
+                      />
+                      <h3 class="mt-2">Aventura en el Océano</h3>
+                    </picture>
+                  </div>
                 </div>
-                <!--
-                <div class="col-12 col-md-6 col-lg-3">
-                  <picture>
-                    <source
-                      media="(min-width:576px)"
-                      srcset="img/portfolio-1.jpeg"
-                      type="image/jpeg"
-                    />
-                    <source
-                      media="(min-width:776px)"
-                      srcset="img/portfolio-2.jpeg"
-                      type="image/jpeg"
-                    />
-                    <source
-                      media="(min-width:992px)"
-                      srcset="img/portfolio-2.jpeg"
-                      type="image/jpeg"
-                    />
-                    <source
-                      media="(min-width:1200px)"
-                      srcset="img/portfolio-2.jpeg"
-                      type="image/jpeg"
-                    />
-                    <source
-                      media="(min-width:1440px)"
-                      srcset="img/portfolio-2.jpeg"
-                      type="image/jpeg"
-                    />
-                  </picture>
+                <!--Fin primera fila galeria-->
+                <!--Segunda fila galeria-->
+                <div class="row row-gap-5">
+                  <!--Cuarta imagen-->
+                  <div class="col-lg-4 col-xl-4 col-xxl-4   col-sm-12 d-md-block">
+                    <picture>
+                      <source
+                        media="(min-width: 1400px)"
+                        srcset="img/1400px/imagen4-xxlarge.jpg"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="img/1200px/imagen4-xlarge.jpg"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width: 992px)"
+                        srcset="img/992px/imagen4-large.png"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="img/768px/imagen4-medium.png"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width:576px)"
+                        srcset="img/576px/imagen4-small.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/576px/imagen4-small.webp"
+                        alt="Hojas"
+                        class="img-fluid rounded"
+                      />
+                      <h3 class="mt-2">Entre las Hojas</h3>
+                    </picture>
+                  </div>
+                  <!--Quinta imagen-->
+                  <div class="col-lg-4 col-xl-4 col-xxl-4   col-sm-12 d-md-block">
+                    <picture>
+                      <source
+                        media="(min-width: 1400px)"
+                        srcset="img/1400px/imagen5-xxlarge.jpg"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="img/1200px/imagen5-xlarge.jpg"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width: 992px)"
+                        srcset="img/992px/imagen5-large.png"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="img/768px/imagen5-medium.png"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width:576px)"
+                        srcset="img/576px/imagen5-small.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/576px/imagen5-small.webp"
+                        alt="Lago"
+                        class="img-fluid rounded"
+                      />
+                      <h3 class="mt-2">Relajación en el Lago</h3>
+                    </picture>
+                  </div>
+                  <!--Sexta imagen-->
+                  <div class="col-lg-4 col-xl-4 col-xxl-4  col-sm-12 d-md-block">
+                    <picture>
+                      <source
+                        media="(min-width: 1400px)"
+                        srcset="img/1400px/imagen6-xxlarge.jpg"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="img/1200px/imagen6-xlarge.jpg"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width: 992px)"
+                        srcset="img/992px/imagen6-large.png"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="img/768px/imagen6-medium.png"
+                        type="image/jpeg"
+                      />
+                      <source
+                        media="(min-width:576px)"
+                        srcset="img/576px/imagen6-small.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/576px/imagen6-small.webp"
+                        alt="Puesta de sol"
+                        class="img-fluid rounded"
+                      />
+                      <h3 class="mt-2">Romanticismo en la Puesta de Sol</h3>
+                    </picture>
+                  </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                  <picture>
-                    <source
-                      media="(min-width:576px)"
-                      srcset="img/portfolio-1.jpeg"
-                      type="image/jpeg"
-                    />
-                    <source
-                      media="(min-width:776px)"
-                      srcset="img/portfolio-2.jpeg"
-                      type="image/jpeg"
-                    />
-                    <source
-                      media="(min-width:992px)"
-                      srcset="img/portfolio-2.jpeg"
-                      type="image/jpeg"
-                    />
-                    <source
-                      media="(min-width:1200px)"
-                      srcset="img/portfolio-2.jpeg"
-                      type="image/jpeg"
-                    />
-                    <source
-                      media="(min-width:1440px)"
-                      srcset="img/portfolio-2.jpeg"
-                      type="image/jpeg"
-                    />
-                  </picture>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                  <picture>
-                    <source
-                      media="(min-width:576px)"
-                      srcset="img/portfolio-1.jpeg"
-                      type="image/jpeg"
-                    />
-                    <source
-                      media="(min-width:776px)"
-                      srcset="img/portfolio-2.jpeg"
-                      type="image/jpeg"
-                    />
-                    <source
-                      media="(min-width:992px)"
-                      srcset="img/portfolio-2.jpeg"
-                      type="image/jpeg"
-                    />
-                    <source
-                      media="(min-width:1200px)"
-                      srcset="img/portfolio-2.jpeg"
-                      type="image/jpeg"
-                    />
-                    <source
-                      media="(min-width:1440px)"
-                      srcset="img/portfolio-2.jpeg"
-                      type="image/jpeg"
-                    />
-                  </picture>
-                </div>-->
+                <!--Fin segunda fila galeria-->
               </div>
-            </div>
+            
             <!--Fin col Portfolio-->
           </section>
           <!--Fin Section Portfolio-->
@@ -779,7 +887,7 @@
             <!-- Fin col para evitar scroll lateral -->
           </section>
           <!-- Fin Section Services -->
-           <!-- Inicio Section Testimonials -->
+          <!-- Inicio Section Testimonials -->
           <section class="row fondo-gris mt-5">
             <!--Row Testimonios-->
             <div class="col">

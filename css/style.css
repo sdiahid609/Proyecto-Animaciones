@@ -338,15 +338,14 @@ h6 {
 }
 /*Fin Contact*/
 
-
 section {
   animation: aparicion 2s ease-in-out both;
   animation-timeline: view();
   animation-range: entry 30% cover 50%;
 }
 @keyframes progreso {
-  1% {
-    width: 1%;
+  0% {
+    width: 0%;
     background-color: red;
   }
   25% {
@@ -370,5 +369,5 @@ section {
 #progress-php,
 #progress-wordpress,
 #progress-photoshop {
-  animation: progreso 5s ease-in-out both;
+  animation: progreso 5s ease-in-out;
 }
