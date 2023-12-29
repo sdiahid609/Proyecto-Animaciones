@@ -25,7 +25,10 @@
   </head>
 
   <body>
+    
+    <!-- Navbar -->
     <div class="container-fluid">
+      <div class="barra"></div>
       <!--Inicio container fluid-->
       <div class="row">
         <!--Row Navbar y contenido-->
@@ -68,31 +71,64 @@
                     <h3>Alex Smith</h3>
                   </li>
                 </div>
-                <li id="redes-navbar">
-                  <i class="bi bi-twitter"></i>
-                  <i class="bi bi-facebook"></i>
-                  <i class="bi bi-instagram"></i>
-                  <i class="bi bi-skype"></i>
-                  <i class="bi bi-linkedin"></i>
-                </li>
+                <div class="iconos my-3 mt-4 d-flex justify-content-center gap-3">
+                  <a href="#" class="rounded-circle p-2 ms-1"
+                    ><i class="bi bi-twitter-x fs-6 p-1"></i
+                  ></a>
+                  <a href="#" class="rounded-circle p-2 "
+                    ><i class="bi bi-facebook p-1"></i
+                  ></a>
+                  <a href="#" class="rounded-circle p-2 ms-1"
+                    ><i class="bi bi-instagram p-1"></i
+                  ></a>
+                  <a href="#" class="rounded-circle p-2 ms-1"
+                    ><i class="bi bi-skype p-1"></i
+                  ></a>
+                  <a href="#" class="rounded-circle p-2"
+                    ><i class="bi bi-linkedin p-1"></i
+                  ></a>
+                </div>
                 <div id="secciones-navbar">
-                  <li>
-                    <i class="bi bi-house-door"></i><a href="home">Home</a>
+                  <li class="nav-item mb-2 py-2">
+                    <a href="#" class="d-flex align-items-center fs-6">
+                      <i class="bi bi-house-door me-2" id="icono1"></i>
+                      Home
+                    </a>
                   </li>
-                  <li><i class="bi bi-person"></i><a href="about">About</a></li>
-                  <li>
-                    <i class="bi bi-file-earmark"></i
-                    ><a href="resume">Resume</a>
+
+                  <li class="nav-item mb-2 py-2">
+                    <a href="#about" class="d-flex align-items-center fs-6">
+                      <i class="bi bi-person me-2" id="icono1"></i>
+                      About
+                    </a>
                   </li>
-                  <li>
-                    <i class="bi bi-book"></i><a href="portfolio">Portfolio</a>
+
+                  <li class="nav-item mb-2 py-2">
+                    <a href="#resume" class="d-flex align-items-center fs-6">
+                      <i class="bi bi-file-earmark me-2" id="icono2"></i>
+                      Resume
+                    </a>
                   </li>
-                  <li>
-                    <i class="bi bi-hdd-stack"></i
-                    ><a href="services">Services</a>
+
+                  <li class="nav-item mb-2 py-2">
+                    <a href="#portfolio" class="d-flex align-items-center fs-6">
+                      <i class="bi bi-book me-2" id="icono3"></i>
+                      Portfolio
+                    </a>
                   </li>
-                  <li>
-                    <i class="bi bi-envelope"></i><a href="contact">Contact</a>
+
+                  <li class="nav-item mb-2 py-2">
+                    <a href="#services" class="d-flex align-items-center fs-6">
+                      <i class="bi bi-hdd-stack me-2" id="icono4"></i>
+                      Services
+                    </a>
+                  </li>
+
+                  <li class="nav-item mb-2 py-2">
+                    <a href="#contact" class="d-flex align-items-center fs-6">
+                      <i class="bi bi-envelope me-2" id="icono5"></i>
+                      Contact
+                    </a>
                   </li>
                 </div>
               </ul>
@@ -109,14 +145,23 @@
               <div
                 class="d-flex flex-column align-items-center justify-content-center h-100 text-white"
               >
-                <h1>Alex Smith</h1>
-                <p>I'm <span id="subrayado">Developer</span></p>
+                <h1 class="display-4">Alex Smith</h1>
+                <p class="text-white align-content-start fs-3 fw-lighter me-5 pe-5">
+                  I'm
+                  <a
+                    class="link-offset-3 text-white custom-underline-color rayaColorAzul"
+                    id="miEnlace"
+                    href="#"
+                    >Developer</a
+                  >
+                </p>
+                
               </div>
             </div>
           </div>
           <!--Fin de portada-->
           <!--Seccion "Sobre mi"-->
-          <section class="row mx-2 mt-4" id="about" >
+          <section class="row mx-4 mt-4" id="about" >
             <div class="row  mt-4">
               <!--About-->
               <div class="col-1">
@@ -211,7 +256,7 @@
           </section>
           <!-- Fin Section About-->
           <!-- Inicio Section Facts -->
-          <section class="row mx-2 mt-5" id="facts">
+          <section class="row mx-4 mt-5" id="facts">
             <div class="row mt-4">
               <!--Inicio row Facts-->
               <div class="col-1">
@@ -578,14 +623,15 @@
                 <div class="row row-gap-5 ">
                   <!--Primera imagen-->
                   <div class="col-lg-4 col-xl-4 col-xxl-4  col-sm-12 d-md-block">
-                    <!--Alternativa 
-                    <picture>
-                    <img
-                    src="foto_grande.jpg"  
-                    sizes="(max-width: 1024px) 100vw, 1024px"
-                    srcset="foto_chica.jpg 480w, foto_mediana.jpg 768w, foto_grande.jpg 1024w,  foto_super.jpg 1024w 2x"
-                    alt="">
-                    </picture>-->
+                    <!--Alternativa max-width-->
+                    <!-- <picture>
+                      <img
+                        src="img/576px/imagen1-small.webp" 
+                        sizes="(max-width: 576px) 576px, (max-width: 768px) 768px, (max-width: 992px) 992px, (max-width: 1200px) 1200px,(max-width: 1400px) 1400px"
+                        srcset="img/576px/imagen1-small.webp 576w, img/768px/imagen1-medium.png 768w, img/992px/imagen1-large.png 992w,  img/1200px/imagen1-xlarge.jpg 1200w, img/1400px/imagen1-xxlarge.jpg 1400w"
+                        alt="" class="rounded img-fluid">
+                      <h3 class="mt-2">Aventura en la Montaña</h3>
+                    </picture> -->
                     <picture>
                       <source
                         media="(min-width: 1400px)"
@@ -813,9 +859,7 @@
           </section>
           <!--Fin Section Portfolio-->
           <!-- Inicio Section Services -->
-          <section class="row mx-2 mt-5">
-            <div class="col">
-              <!-- col para evitar scroll lateral -->
+          <section class="row mx-2 mt-5" id="services">
               <div class="row mx-2 mt-4">
                 <!-- Titulo Services -->
                 <div class="col-1">
@@ -891,7 +935,7 @@
                 </div>
               </div>
               <!-- Fin Row contenido Services -->
-            </div>
+            
             <!-- Fin col para evitar scroll lateral -->
           </section>
           <!-- Fin Section Services -->
@@ -1116,7 +1160,7 @@
           </section>
           <!--Fin Section Testimonials-->
           <!--Inicio Section Contact-->
-          <section class="row mx-2 mt-5">
+          <section class="row mx-2 mt-5" id="contact">
             
             <div class="col">
               <!--col para evitar scroll lateral-->
@@ -1216,11 +1260,14 @@
             <!--Fin col Contact-->
           </section>
           <!--Fin Section Contact-->
-        </section>
         <!--Fin Contenido-->
       </div>
       <!--Fin row navbar y contenido-->
     </div>
     <!-- Fin container fluid -->
+    <!--Botón ir hacia arriba-->
+    <a href="#" class="icono-to-top">
+      <i class="bi bi-arrow-up-short fs-4"></i>
+    </a>
   </body>
 </html>

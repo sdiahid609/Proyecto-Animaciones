@@ -1,3 +1,4 @@
+/* Fuentes */
 h1,
 h2,
 h3,
@@ -8,7 +9,68 @@ h6 {
   font-weight: 700;
 }
 
-/*Botón hamburguesa*/
+/* Estilos de subrayado azul */
+.rayaColorAzul {
+  text-decoration-color: #149ddd;
+  text-decoration-thickness: 3px;
+}
+
+/* Estilos de iconos */
+.iconos a {
+  color: white;
+  background-color: #2b2e3b;
+}
+
+/* Estilos de navegación */
+.nav-item a,
+.nav-item i {
+  color: #81818a;
+}
+
+.nav-item a:hover {
+  color: white;
+}
+
+/* Estilos de iconos al hacer hover */
+.icono-to-top {
+  width: 50px;
+  height: 50px;
+  background-color: #149ddd;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+}
+
+/* Estilos de fuente celeste */
+.fuenteCeleste,
+#about ul i,
+.nav-item li:hover > a i,
+.iconos-contact,
+.nav-item a:hover #icono1,
+.nav-item a:hover #icono2,
+.nav-item a:hover #icono3,
+.nav-item a:hover #icono4,
+.nav-item a:hover #icono5,
+.nav-item a:hover #icono6 {
+  color: #149ddd;
+}
+
+/* Estilos de iconos al estar seleccionados */
+.nav-item a:checked + #icono1,
+.nav-item a:checked + #icono2,
+.nav-item a:checked + #icono3,
+.nav-item a:checked + #icono4,
+.nav-item a:checked + #icono5,
+.nav-item a:checked + #icono6 {
+  color: #149ddd;
+}
+
+/* Estilos del botón hamburguesa */
 .navbar-toggler {
   background-color: #007bff;
   border: none;
@@ -19,6 +81,7 @@ h6 {
   position: fixed;
   top: 10px;
   right: 10px;
+  z-index: 1;
 }
 
 .navbar-toggler-icon {
@@ -29,7 +92,7 @@ h6 {
   position: relative;
 }
 
-/*Esto es para añadirle las tres rayitas*/
+/* Estilos del botón hamburguesa - líneas */
 .navbar-toggler-icon::before,
 .navbar-toggler-icon::after {
   content: "";
@@ -48,25 +111,20 @@ h6 {
   bottom: -6px;
 }
 
-/*Fin botón hamburguesa*/
-
-/*Media query para que se muestre siempre el offcanvas en xl*/
+/* Estilos del offcanvas en pantallas grandes */
 @media (min-width: 1200px) {
   .offcanvas.show-xl {
     visibility: visible;
     transform: none;
     position: sticky;
-    /*Para que se quede fijo*/
     top: 0;
-    /*Para que se quede arriba*/
     min-height: 100vh;
-    /*Para que ocupe toda la pantalla*/
     width: 100%;
   }
 }
 
+/* Estilos de la lista del offcanvas */
 .offcanvas ul {
-  /*Esto es para quitar el padding y el margin que te crea el ul, aparte quitar*/
   list-style: none;
   margin: 0;
   padding: 0;
@@ -76,16 +134,19 @@ h6 {
   margin-top: 20px;
 }
 
+/* Estilos de la imagen del navbar */
 #imagen-navbar {
   border: 8px solid #3b3e4e;
 }
 
+/* Estilos de las redes sociales del navbar */
 #redes-navbar {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
+/* Estilos de las secciones del navbar */
 #secciones-navbar {
   margin-left: 2rem;
 }
@@ -99,6 +160,7 @@ h6 {
   color: white;
 }
 
+/* Estilos del título de la página */
 .titulo-pagina {
   display: flex;
   align-items: center;
@@ -107,13 +169,15 @@ h6 {
   color: white;
 }
 
-/*imagen de fondo de la página principal*/
+/* Estilos de la imagen de fondo de la página principal */
 #imagen-fondo {
   background: url(../img/hero-bg.jpeg) top center fixed;
   background-size: cover;
   height: 100vh;
+  animation: transform 10s ease-in-out;
 }
 
+/* Estilos del subrayado */
 .subtitulo {
   color: white;
 }
@@ -125,17 +189,18 @@ h6 {
   text-underline-offset: 5px;
 }
 
-/*About*/
-
+/* Estilos de los iconos de facts */
 .bi-chevron-right {
   color: #149ddd;
 }
 
+/* Estilos de la imagen de about */
 #tamano-foto-about {
   width: 295px;
   height: 295px;
 }
 
+/* Estilos de la lista de about */
 .lista-about ul {
   list-style: none;
   margin: 0;
@@ -146,25 +211,7 @@ h6 {
   margin-bottom: 20px;
 }
 
-/*Fin about*/
-
-/*Facts*/
-.iconos-facts .bi {
-  color: #149ddd;
-  font-size: 45px;
-}
-
-.iconos-facts span {
-  font-size: 48px;
-}
-
-/*Fin facts*/
-
-/*Skills*/
-
-.fondo-gris {
-  background-color: #f5f8fd;
-}
+/* Estilos de la barra de progreso */
 .progress {
   border-radius: 0;
 }
@@ -193,9 +240,7 @@ h6 {
   width: 55%;
 }
 
-/*Fin Skills*/
-
-/*Resume*/
+/* Estilos de la línea de resume */
 .linea-resume {
   padding: 0 0 20px 20px;
   margin-top: -2px;
@@ -219,9 +264,7 @@ h6 {
   background: #1f5297;
 }
 
-/*Fin Resume*/
-
-/*Portfolio*/
+/* Estilos del navbar de portfolio */
 #navbar-portfolio {
   background-color: white;
   display: flex;
@@ -236,39 +279,30 @@ h6 {
   margin-left: 20px;
 }
 
+/* Estilos de las imágenes de portfolio */
 .portfolio-imagenes div {
   margin-bottom: 25px;
 }
 
-/*Fin Portfolio*/
-
-/*Services*/
-
+/* Estilos de los iconos de services */
 .iconos-services p {
   margin-left: 80px;
 }
 
-/*Agregar circulo azul a los iconos*/
+/* Estilos de los iconos de services - círculo azul */
 .iconos-services i {
   float: left;
-  /*Para que se quede a la izquierda*/
   width: 50px;
-  /*Para que se ponga el circulo azul*/
   height: 50px;
   line-height: 50px;
-  /*Para poner el icono en vertical en el centro*/
   text-align: center;
-  /*para centrar el icono horizontalmente */
   font-size: 24px;
   background-color: #149ddd;
   color: white;
   border-radius: 50%;
 }
 
-/*Fin Services*/
-
-/*Testimonials*/
-
+/* Estilos de los testimonios */
 .carousel-item img {
   width: 100px;
   height: 100px;
@@ -281,22 +315,17 @@ h6 {
   border-radius: 8px;
 }
 
-/*Contact*/
-
+/* Estilos del contacto */
 .div-iz {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .div-iz i {
   float: left;
-  /*Para que se quede a la izquierda*/
   width: 45px;
-  /*Para que se ponga el circulo azul*/
   height: 45px;
   line-height: 45px;
-  /*Para poner el icono en vertical en el centro*/
   text-align: center;
-  /*para centrar el icono horizontalmente */
   font-size: 24px;
   background-color: #dff3fc;
   color: #149ddd;
@@ -336,25 +365,53 @@ h6 {
 #floatingTextarea2 {
   height: 300px;
 }
-/*Fin Contact*/
 
+/* Keyframes */
 section {
   animation: aparicion 2s ease-in-out both;
   animation-timeline: view();
   animation-range: entry 30% cover 50%;
 }
+
+#progress-html,
+#progress-css,
+#progress-javascript,
+#progress-php,
+#progress-wordpress,
+#progress-photoshop {
+  animation: progreso 5s ease-in-out 2s;
+}
+
+.barra {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  animation: progreso;
+  animation-timeline: scroll();
+  z-index: 1111;
+}
+
+/* Keyframes */
 @keyframes progreso {
   0% {
     width: 0%;
     background-color: red;
   }
   25% {
-    background-color: yellow;
+    background-color: orange;
   }
   50% {
+    background-color: yellow;
+  }
+  100% {
     background-color: green;
   }
 }
+
 @keyframes aparicion {
   0% {
     opacity: 0;
@@ -362,12 +419,4 @@ section {
   70% {
     opacity: 1;
   }
-}
-#progress-html,
-#progress-css,
-#progress-javascript,
-#progress-php,
-#progress-wordpress,
-#progress-photoshop {
-  animation: progreso 5s ease-in-out;
 }
