@@ -8,7 +8,9 @@ h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
-
+#contact {
+  padding-bottom: 280px;
+}
 /* Estilos de subrayado azul */
 .rayaColorAzul {
   text-decoration-color: #149ddd;
@@ -422,8 +424,18 @@ section {
 @keyframes aparicion {
   0% {
     opacity: 0;
+    scale: 0.1;
   }
-  70% {
+  25% {
+    opacity: 0.25;
+    scale: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+    scale: 0.5;
+  }
+  100% {
     opacity: 1;
+    scale: 1;
   }
 }
