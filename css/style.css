@@ -193,7 +193,14 @@ h6 {
 .bi-chevron-right {
   color: #149ddd;
 }
+.iconos-facts .bi {
+  color: #149ddd;
+  font-size: 45px;
+}
 
+.iconos-facts span {
+  font-size: 48px;
+}
 /* Estilos de la imagen de about */
 #tamano-foto-about {
   width: 295px;
