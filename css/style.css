@@ -439,3 +439,69 @@ section {
     scale: 1;
   }
 }
+/*Transiciones*/
+
+.colAbout {
+  overflow: hidden;
+}
+
+.positionAbout {
+  position: relative;
+}
+
+.bordeAbout {
+  border-radius: 2%;
+  transition: all 1s ease;
+  overflow: hidden;
+}
+
+.smith {
+  position: absolute;
+  width: auto;
+  height: 80%;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.imgAbout {
+  background-color: #a7a7a7;
+  padding: 5px;
+  border-radius: 2%;
+  transition: all 1s ease;
+}
+
+.positionAbout:hover .bordeAbout {
+  transform: perspective(350px) rotateX(10deg) scale(0.9);
+  box-shadow: 0px 0px 10px #000000;
+  filter: brightness(85%);
+}
+
+.positionAbout:hover .smith {
+  bottom: 0;
+  opacity: 1;
+}
+
+.positionAbout:hover .imgAbout {
+  transform: scale(1.5);
+  filter: blur(5px);
+}
+
+.contenedorImgPortfolio{
+  overflow: hidden;
+}
+
+.imagenPortfolio {
+  filter: grayscale(70%);
+  transition: 0.3s;
+}
+
+.imagenPortfolio:hover {
+  transform:scale(1.3);
+  filter: grayscale(0%);
+}
+
+/*/
