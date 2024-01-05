@@ -374,14 +374,187 @@ h6 {
 #floatingTextarea2 {
   height: 300px;
 }
+/* Código nuevo proyecto */
 
-/* Keyframes */
+/*Transiciones Sergio Díaz*/
+
+/* 
+La regla '.colAbout' define un contenedor con desbordamiento oculto.
+*/
+.colAbout {
+  overflow: hidden;
+}
+
+/* 
+La regla '.positionAbout' define un elemento con posición relativa.
+*/
+.positionAbout {
+  position: relative;
+}
+
+/* 
+La regla '.bordeAbout' define un elemento con bordes redondeados y una transición suave.
+La transición se aplica a todas las propiedades y dura 1 segundo.
+El desbordamiento del contenido está oculto.
+*/
+.bordeAbout {
+  border-radius: 2%;
+  transition: all 1s ease;
+  overflow: hidden;
+}
+
+/* 
+La regla '.smith' define un elemento con posición absoluta.
+El ancho es automático y la altura es el 80% del contenedor padre.
+El elemento se coloca en la parte inferior centrada horizontalmente.
+La opacidad inicial es 0.
+La transición se aplica a todas las propiedades y dura 1 segundo.
+*/
+.smith {
+  position: absolute;
+  width: auto;
+  height: 80%;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+/* 
+La regla '.imgAbout' define un elemento con un color de fondo y bordes redondeados.
+El contenido tiene un relleno de 5px.
+La transición se aplica a todas las propiedades y dura 1 segundo.
+*/
+.imgAbout {
+  background-color: #a7a7a7;
+  padding: 5px;
+  border-radius: 2%;
+  transition: all 1s ease;
+}
+
+/* 
+Cuando se realiza un desplazamiento sobre un elemento con la clase '.positionAbout',
+se aplican las siguientes transformaciones a los elementos hijos:
+- Se aplica una perspectiva de 350px y se rota en el eje X 10 grados y se escala al 90% del tamaño original.
+- Se agrega una sombra al elemento con un desenfoque de 10px y un color de sombra negro.
+- El elemento con la clase '.smith' se mueve hacia arriba y se hace visible.
+- El elemento con la clase '.imgAbout' se escala al 150% del tamaño original y se aplica un desenfoque de 5px.
+*/
+.positionAbout:hover .bordeAbout {
+  transform: perspective(350px) rotateX(10deg) scale(0.9);
+  box-shadow: 0px 0px 10px #000000;
+  filter: brightness(85%);
+}
+
+.positionAbout:hover .smith {
+  bottom: 0;
+  opacity: 1;
+}
+
+.positionAbout:hover .imgAbout {
+  transform: scale(1.5);
+  filter: blur(5px);
+}
+
+/* 
+La regla '.contenedorImgPortfolio' define un contenedor con desbordamiento oculto.
+*/
+.contenedorImgPortfolio {
+  overflow: hidden;
+}
+
+/* 
+La regla '.imagenPortfolio' define una imagen con un filtro de escala de grises del 70%.
+La transición dura 0.3 segundos.
+Cuando se realiza un desplazamiento sobre la imagen, esta se escala al 130% del tamaño original y se quita el filtro de escala de grises.
+*/
+.imagenPortfolio {
+  filter: grayscale(70%);
+  transition: 0.3s;
+}
+
+.imagenPortfolio:hover {
+  transform: scale(1.3);
+  filter: grayscale(0%);
+}
+
+/*/
+/*Transformaciones Sergio Guijarro*/
+
+/* 
+La regla '#iconos-animados' define un elemento con una transición de transformación de 0.7 segundos.
+Cuando se realiza un desplazamiento sobre el elemento, este rota 360 grados, se escala al 130% del tamaño original y se desplaza 50px hacia la derecha y 50px hacia abajo.
+*/
+#iconos-animados {
+  transition: transform 0.7s ease-in-out;
+}
+
+#iconos-animados:hover {
+  transform: rotate(360deg) scale(1.3) translate(50px, 50px);
+}
+
+/* 
+La regla '.navbar-toggler' define un elemento con una transición de transformación de 0.7 segundos.
+Cuando se realiza un desplazamiento sobre el elemento, este rota 360 grados y se escala al 130% del tamaño original.
+*/
+.navbar-toggler {
+  transition: transform 0.7s ease-in-out;
+}
+
+.navbar-toggler:hover {
+  transform: rotate(360deg) scale(1.3);
+}
+
+/* 
+La regla '.iconos-services i' define elementos <i> dentro de un contenedor con una transición de transformación de 2 segundos, un cambio de color de fondo de 4 segundos y un cambio de sombra de 4 segundos.
+Cuando se realiza un desplazamiento sobre los elementos, estos rota 2 vueltas, se escala al 150% del tamaño original, cambian el color de fondo a rojo y se agrega una sombra con un desenfoque de 10px y un color de sombra rojo.
+*/
+.iconos-services i {
+  transition: transform 2s ease-in-out, background 4s ease-in-out,
+    box-shadow 4s ease-in-out;
+}
+
+.iconos-services i:hover {
+  transform: rotate(2turn) scale(1.5);
+  background: red;
+  box-shadow: 0 0 10px red;
+}
+
+/* 
+La regla '#primo-alex' define un elemento con una transición de transformación de 3 segundos.
+Cuando se realiza un desplazamiento sobre el elemento, este se escala al 30% del tamaño original, se desplaza hacia arriba 700px y se inclina -30 grados en los ejes X e Y.
+*/
+#primo-alex {
+  transition: transform 3s ease-in-out;
+}
+
+#primo-alex:hover {
+  transform: scale(0.3) translateY(-700px) skew(-30deg, -30deg);
+}
+
+/* Jesús de Dios*/
+
+/* 
+La regla 'section' aplica una animación llamada 'aparicion' a los elementos <section>.
+La animación dura 2 segundos y tiene una aceleración y desaceleración suave.
+La animación se ejecuta en ambos sentidos.
+La animación se controla mediante una línea de tiempo llamada 'view()'.
+La animación se aplica en el rango de tiempo desde el 30% que se ve en el eje X y que en el eje Y cubra hasta el 50%.
+*/
 section {
   animation: aparicion 2s ease-in-out both;
   animation-timeline: view();
   animation-range: entry 30% cover 50%;
 }
 
+/* 
+Las siguientes reglas aplican una animación llamada 'progreso' a los elementos con los siguientes IDs:
+#progress-html, #progress-css, #progress-javascript, #progress-php, #progress-wordpress, #progress-photoshop.
+La animación dura 5 segundos y tiene una aceleración y desaceleración suave.
+La animación se retrasa 2 segundos antes de comenzar para que de tiempo a visualizarla cuando entremos en la web.
+*/
 #progress-html,
 #progress-css,
 #progress-javascript,
@@ -391,6 +564,13 @@ section {
   animation: progreso 5s ease-in-out 2s;
 }
 
+/* 
+La regla '.barra' define un elemento con una posición fija que ocupa toda la pantalla.
+El elemento tiene un ancho del 100% y una altura de 5px.
+El elemento aplica una animación llamada 'progreso'.
+La animación se controla mediante una línea de tiempo llamada 'scroll()'.
+El elemento tiene un z-index de 1111 para que siempre este por encima de cualquier elemento que haya.
+*/
 .barra {
   position: fixed;
   top: 0;
@@ -405,6 +585,14 @@ section {
 }
 
 /* Keyframes */
+
+/* 
+La animación 'progreso' define una serie de pasos para cambiar el ancho y el color de fondo de un elemento.
+En el 0% de la animación, el ancho es 0% y el color de fondo es rojo.
+En el 25% de la animación, el color de fondo cambia a naranja.
+En el 50% de la animación, el color de fondo cambia a amarillo.
+En el 100% de la animación, el color de fondo cambia a verde.
+*/
 @keyframes progreso {
   0% {
     width: 0%;
@@ -421,6 +609,13 @@ section {
   }
 }
 
+/* 
+La animación 'aparicion' define una serie de pasos para cambiar la opacidad y la escala de un elemento.
+En el 0% de la animación, la opacidad es 0 y la escala es 0.1.
+En el 25% de la animación, la opacidad es 0.25 y la escala es 0.25.
+En el 50% de la animación, la opacidad es 0.5 y la escala es 0.5.
+En el 100% de la animación, la opacidad es 1 y la escala es 1.
+*/
 @keyframes aparicion {
   0% {
     opacity: 0;
@@ -439,69 +634,3 @@ section {
     scale: 1;
   }
 }
-/*Transiciones*/
-
-.colAbout {
-  overflow: hidden;
-}
-
-.positionAbout {
-  position: relative;
-}
-
-.bordeAbout {
-  border-radius: 2%;
-  transition: all 1s ease;
-  overflow: hidden;
-}
-
-.smith {
-  position: absolute;
-  width: auto;
-  height: 80%;
-  bottom: 5%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  opacity: 0;
-  transition: all 1s ease;
-}
-
-.imgAbout {
-  background-color: #a7a7a7;
-  padding: 5px;
-  border-radius: 2%;
-  transition: all 1s ease;
-}
-
-.positionAbout:hover .bordeAbout {
-  transform: perspective(350px) rotateX(10deg) scale(0.9);
-  box-shadow: 0px 0px 10px #000000;
-  filter: brightness(85%);
-}
-
-.positionAbout:hover .smith {
-  bottom: 0;
-  opacity: 1;
-}
-
-.positionAbout:hover .imgAbout {
-  transform: scale(1.5);
-  filter: blur(5px);
-}
-
-.contenedorImgPortfolio{
-  overflow: hidden;
-}
-
-.imagenPortfolio {
-  filter: grayscale(70%);
-  transition: 0.3s;
-}
-
-.imagenPortfolio:hover {
-  transform:scale(1.3);
-  filter: grayscale(0%);
-}
-
-/*/
