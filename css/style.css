@@ -463,6 +463,7 @@ La regla '.contenedorImgPortfolio' define un contenedor con desbordamiento ocult
 */
 .contenedorImgPortfolio {
   overflow: hidden;
+  border-radius: 2%;
 }
 
 /* 
