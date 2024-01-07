@@ -53,7 +53,7 @@ h6 {
 /* Estilos de fuente celeste */
 .fuenteCeleste,
 #about ul i,
-.nav-item li:hover>a i,
+.nav-item li:hover > a i,
 .iconos-contact,
 .nav-item a:hover #icono1,
 .nav-item a:hover #icono2,
@@ -65,12 +65,12 @@ h6 {
 }
 
 /* Estilos de iconos al estar seleccionados */
-.nav-item a:checked+#icono1,
-.nav-item a:checked+#icono2,
-.nav-item a:checked+#icono3,
-.nav-item a:checked+#icono4,
-.nav-item a:checked+#icono5,
-.nav-item a:checked+#icono6 {
+.nav-item a:checked + #icono1,
+.nav-item a:checked + #icono2,
+.nav-item a:checked + #icono3,
+.nav-item a:checked + #icono4,
+.nav-item a:checked + #icono5,
+.nav-item a:checked + #icono6 {
   color: #149ddd;
 }
 
@@ -483,7 +483,6 @@ Cuando se realiza un desplazamiento sobre la imagen, esta se escala al 130% del 
 
 .imagenPortfolio:hover {
   transform: scale(1.3);
-  border-radius: 100%;
   filter: grayscale(0%);
 }
 
@@ -495,13 +494,12 @@ La regla '.navbar-toggler' define un elemento con una transición de transformac
 Cuando se realiza un desplazamiento sobre el elemento, este rota 360 grados y se escala al 130% del tamaño original.
 */
 .navbar-toggler {
-  transition: transform .7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
 }
 
 .navbar-toggler:hover {
   transform: rotate(360deg) scale(1.3);
 }
-
 
 /* 
 La regla '#primo-alex' define un elemento con una transición de transformación de 3 segundos.
@@ -514,7 +512,6 @@ Cuando se realiza un desplazamiento sobre el elemento, este se escala al 30% del
 #primo-alex:hover {
   transform: scale(0.3) translateY(-700px) skew(-30deg, -30deg);
 }
-
 
 /* 
 La regla '.iconos-services i' define elementos <i> dentro de un contenedor con una transición de transformación de 2 segundos, un cambio de color de fondo de 4 segundos y un cambio de sombra de 4 segundos.
@@ -530,7 +527,6 @@ Cuando se realiza un desplazamiento sobre los elementos, estos rota 2 vueltas, s
   background: red;
   box-shadow: 0 0 10px red;
 }
-
 
 /* Jesús de Dios*/
 
