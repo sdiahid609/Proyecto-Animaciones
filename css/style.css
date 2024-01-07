@@ -8,9 +8,11 @@ h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
+
 #contact {
   padding-bottom: 280px;
 }
+
 /* Estilos de subrayado azul */
 .rayaColorAzul {
   text-decoration-color: #149ddd;
@@ -51,7 +53,7 @@ h6 {
 /* Estilos de fuente celeste */
 .fuenteCeleste,
 #about ul i,
-.nav-item li:hover > a i,
+.nav-item li:hover>a i,
 .iconos-contact,
 .nav-item a:hover #icono1,
 .nav-item a:hover #icono2,
@@ -63,12 +65,12 @@ h6 {
 }
 
 /* Estilos de iconos al estar seleccionados */
-.nav-item a:checked + #icono1,
-.nav-item a:checked + #icono2,
-.nav-item a:checked + #icono3,
-.nav-item a:checked + #icono4,
-.nav-item a:checked + #icono5,
-.nav-item a:checked + #icono6 {
+.nav-item a:checked+#icono1,
+.nav-item a:checked+#icono2,
+.nav-item a:checked+#icono3,
+.nav-item a:checked+#icono4,
+.nav-item a:checked+#icono5,
+.nav-item a:checked+#icono6 {
   color: #149ddd;
 }
 
@@ -195,6 +197,7 @@ h6 {
 .bi-chevron-right {
   color: #149ddd;
 }
+
 .iconos-facts .bi {
   color: #149ddd;
   font-size: 45px;
@@ -203,6 +206,7 @@ h6 {
 .iconos-facts span {
   font-size: 48px;
 }
+
 /* Estilos de la imagen de about */
 #tamano-foto-about {
   width: 295px;
@@ -374,6 +378,7 @@ h6 {
 #floatingTextarea2 {
   height: 300px;
 }
+
 /* Código nuevo proyecto */
 
 /*Transiciones Sergio Díaz*/
@@ -445,7 +450,7 @@ se aplican las siguientes transformaciones a los elementos hijos:
 .positionAbout:hover .bordeAbout {
   transform: perspective(350px) rotateX(10deg) scale(0.9);
   box-shadow: 0px 0px 10px #000000;
-  filter: brightness(85%);
+  filter: brightness(30%);
 }
 
 .positionAbout:hover .smith {
@@ -463,6 +468,7 @@ La regla '.contenedorImgPortfolio' define un contenedor con desbordamiento ocult
 */
 .contenedorImgPortfolio {
   overflow: hidden;
+  border-radius: 2%;
 }
 
 /* 
@@ -485,28 +491,30 @@ Cuando se realiza un desplazamiento sobre la imagen, esta se escala al 130% del 
 /*Transformaciones Sergio Guijarro*/
 
 /* 
-La regla '#iconos-animados' define un elemento con una transición de transformación de 0.7 segundos.
-Cuando se realiza un desplazamiento sobre el elemento, este rota 360 grados, se escala al 130% del tamaño original y se desplaza 50px hacia la derecha y 50px hacia abajo.
-*/
-#iconos-animados {
-  transition: transform 0.7s ease-in-out;
-}
-
-#iconos-animados:hover {
-  transform: rotate(360deg) scale(1.3) translate(50px, 50px);
-}
-
-/* 
 La regla '.navbar-toggler' define un elemento con una transición de transformación de 0.7 segundos.
 Cuando se realiza un desplazamiento sobre el elemento, este rota 360 grados y se escala al 130% del tamaño original.
 */
 .navbar-toggler {
-  transition: transform 0.7s ease-in-out;
+  transition: transform .7s ease-in-out;
 }
 
 .navbar-toggler:hover {
   transform: rotate(360deg) scale(1.3);
 }
+
+
+/* 
+La regla '#primo-alex' define un elemento con una transición de transformación de 3 segundos.
+Cuando se realiza un desplazamiento sobre el elemento, este se escala al 30% del tamaño original, se desplaza hacia arriba 700px y se inclina -30 grados en los ejes X e Y.
+*/
+#primo-alex {
+  transition: transform 3s ease-in-out;
+}
+
+#primo-alex:hover {
+  transform: scale(0.3) translateY(-700px) skew(-30deg, -30deg);
+}
+
 
 /* 
 La regla '.iconos-services i' define elementos <i> dentro de un contenedor con una transición de transformación de 2 segundos, un cambio de color de fondo de 4 segundos y un cambio de sombra de 4 segundos.
@@ -523,17 +531,6 @@ Cuando se realiza un desplazamiento sobre los elementos, estos rota 2 vueltas, s
   box-shadow: 0 0 10px red;
 }
 
-/* 
-La regla '#primo-alex' define un elemento con una transición de transformación de 3 segundos.
-Cuando se realiza un desplazamiento sobre el elemento, este se escala al 30% del tamaño original, se desplaza hacia arriba 700px y se inclina -30 grados en los ejes X e Y.
-*/
-#primo-alex {
-  transition: transform 3s ease-in-out;
-}
-
-#primo-alex:hover {
-  transform: scale(0.3) translateY(-700px) skew(-30deg, -30deg);
-}
 
 /* Jesús de Dios*/
 
@@ -545,7 +542,7 @@ La animación se controla mediante una línea de tiempo llamada 'view()'.
 La animación se aplica en el rango de tiempo desde el 30% que se ve en el eje X y que en el eje Y cubra hasta el 50%.
 */
 section {
-  animation: aparicion 2s ease-in-out both;
+  animation: aparicion 2s ease-in-out backwards;
   animation-timeline: view();
   animation-range: entry 30% cover 50%;
 }
@@ -599,12 +596,15 @@ En el 100% de la animación, el color de fondo cambia a verde.
     width: 0%;
     background-color: red;
   }
+
   25% {
     background-color: orange;
   }
+
   50% {
     background-color: yellow;
   }
+
   100% {
     background-color: green;
   }
@@ -622,14 +622,17 @@ En el 100% de la animación, la opacidad es 1 y la escala es 1.
     opacity: 0;
     scale: 0.1;
   }
+
   25% {
     opacity: 0.25;
     scale: 0.25;
   }
+
   50% {
     opacity: 0.5;
     scale: 0.5;
   }
+
   100% {
     opacity: 1;
     scale: 1;
