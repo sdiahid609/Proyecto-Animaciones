@@ -445,7 +445,7 @@ se aplican las siguientes transformaciones a los elementos hijos:
 .positionAbout:hover .bordeAbout {
   transform: perspective(350px) rotateX(10deg) scale(0.9);
   box-shadow: 0px 0px 10px #000000;
-  filter: brightness(85%);
+  filter: brightness(30%);
 }
 
 .positionAbout:hover .smith {
@@ -545,7 +545,7 @@ La animación se controla mediante una línea de tiempo llamada 'view()'.
 La animación se aplica en el rango de tiempo desde el 30% que se ve en el eje X y que en el eje Y cubra hasta el 50%.
 */
 section {
-  animation: aparicion 2s ease-in-out both;
+  animation: aparicion 2s ease-in-out backwards;
   animation-timeline: view();
   animation-range: entry 30% cover 50%;
 }
