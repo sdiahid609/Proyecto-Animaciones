@@ -450,7 +450,7 @@ se aplican las siguientes transformaciones a los elementos hijos:
 .positionAbout:hover .bordeAbout {
   transform: perspective(350px) rotateX(10deg) scale(0.9);
   box-shadow: 0px 0px 10px #000000;
-  filter: brightness(30%);
+  filter: brightness(70%);
 }
 
 .positionAbout:hover .smith {
